@@ -1,7 +1,7 @@
 import puppetteer from "puppeteer";
 import { fork } from "child_process";
 
-jest.setTimeout(50000); // default puppeteer timeout
+jest.setTimeout(90000); // default puppeteer timeout
 
 describe("Show popover", () => {
   let browser = null;

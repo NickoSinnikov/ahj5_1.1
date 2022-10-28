@@ -19,6 +19,9 @@ export default class PopoverWidget {
     this.button.offsetParent.appendChild(this.popover);
     this.arrow = document.querySelector(".triangle");
 
+    this.popover.classList.toggle('display-enable');
+    this.popover.classList.toggle('display-disable');
+
     this.popover.style.top = `${
       this.button.offsetTop +
       this.button.offsetHeight / 2 -
